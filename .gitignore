@@ -1,6 +1,9 @@
+.venv/
 __pycache__/
-.env
-.vscode/
 *.pyc
-models/
-*.ipynb_checkpoints
+*.pyo
+.ipynb_checkpoints/
+outputs/
+mlruns/
+*.db
+
