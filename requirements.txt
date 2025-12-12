@@ -1,18 +1,20 @@
-flask==2.2.5
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn==1.3.2
-joblib==1.3.2
-python-dotenv==1.0.0
-gunicorn==20.1.0
-# activate .venv first
-.\.venv\Scripts\activate
+cd "C:\Users\verma\OneDrive\Desktop\realestate-advisor"
 
-pip freeze > requirements.txt
-# OR create minimal:
-echo streamlit>requirements.txt
-echo pandas>>requirements.txt
-echo numpy>>requirements.txt
-echo scikit-learn>>requirements.txt
-echo joblib>>requirements.txt
-echo matplotlib>>requirements.txt
+# Overwrite requirements.txt with only pip packages (no shell commands or paths)
+@"
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+seaborn
+"@ > requirements.txt
+
+# show the file to confirm
+echo === requirements.txt ===
+type requirements.txt
+echo ========================
+
+
+
